@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "reviews",
+  "collectionName": "abouts",
   "info": {
-    "singularName": "review",
-    "pluralName": "reviews",
-    "displayName": "review",
-    "description": ""
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about"
   },
   "options": {
     "draftAndPublish": true
@@ -16,25 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "paragraph": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
-    "link": {
+    "heading": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -42,15 +23,13 @@
       },
       "type": "string"
     },
-    "rating": {
+    "paragraph": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "integer",
-      "max": 0,
-      "min": 10
+      "type": "richtext"
     },
     "subtext": {
       "pluginOptions": {
@@ -60,7 +39,7 @@
       },
       "type": "string"
     },
-    "details": {
+    "country1": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -68,7 +47,39 @@
       },
       "type": "string"
     },
-    "navigation": {
+    "country2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "country3": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "country4": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "country5": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "country6": {
       "pluginOptions": {
         "i18n": {
           "localized": true
