@@ -32,7 +32,7 @@ export default function ReviewDetails() {
             </div>
             <p>{details.attributes.paragraph}...</p>
 
-            <Link to={'/'}>{details.attributes.navigation}</Link>
+            <Link to={'/strapi-demo'}>{details.attributes.navigation}</Link>
         </div>
       ) : (
         <div>Loading...</div>

@@ -10,12 +10,12 @@ export default function SiteHeader({showLanguages,globeClick,languageClick}) {
   return (
         
     <div className='site-header'>
-          <Link to='/'><h1><FontAwesomeIcon icon={faHouse} style={{ color: '#8e2ad6', fontSize: '1em',marginRight:'10px'}} 
+          <Link to='/strapi-demo'><h1><FontAwesomeIcon icon={faHouse} style={{ color: '#8e2ad6', fontSize: '1em',marginRight:'10px'}} 
           />STRAPI
           </h1> </Link>
           <div style={{display:'flex',alignItems:'center',gap:'10px',position:'relative'}}>
               <ul className='pages'>
-                <Link to={'/'}><li>Home</li></Link>
+                <Link to={'/strapi-demo'}><li>Home</li></Link>
                 <Link to={'/about'}><li>About</li></Link>
                 <Link to={'/Contact'}><li>Contact</li></Link>
               </ul>
