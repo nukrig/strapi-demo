@@ -49,8 +49,8 @@
         }
       },
       "type": "integer",
-      "max": 0,
-      "min": 10
+      "max": 10,
+      "min": 0
     },
     "subtext": {
       "pluginOptions": {
