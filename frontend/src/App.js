@@ -22,7 +22,7 @@ function App() {
     <div className="app">
       <SiteHeader language={language} showLanguages={showLanguages} globeClick={globeClick} languageClick={languageClick} />
       <Routes>
-        <Route exact path="/" element={<Homepage language={language}  />}/>
+        <Route exact path="/strapi-demo" element={<Homepage language={language}  />}/>
         <Route path='/about' element={<AboutPage language={language}/>}/>
         <Route path="/contact" element={<ContactPage language={language}  />}/>
         <Route path="/details" element={<ReviewDetails language={language} />}/>
