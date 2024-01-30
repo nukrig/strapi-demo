@@ -1,0 +1,34 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: calc(100vh - 116px);
+    width: 100%;
+  }
+  .contact div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 200px;
+    border: 2px solid rgb(199, 198, 198);
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .contact div span{
+    color: #555;
+  }
+  .contact div a{
+    border-bottom: 0;
+  }
+  .contact-icon{
+    color: #8e2ad6;
+    font-size: 50px;
+    position: absolute;
+    left: 43%;
+    top: 20px;
+  }
