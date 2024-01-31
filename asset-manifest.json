@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/strapi-demo/static/css/main.90267326.css",
-    "main.js": "/strapi-demo/static/js/main.fa560cbf.js",
+    "main.js": "/strapi-demo/static/js/main.ceff0e63.js",
     "static/js/787.7dc3e854.chunk.js": "/strapi-demo/static/js/787.7dc3e854.chunk.js",
     "index.html": "/strapi-demo/index.html",
     "main.90267326.css.map": "/strapi-demo/static/css/main.90267326.css.map",
-    "main.fa560cbf.js.map": "/strapi-demo/static/js/main.fa560cbf.js.map",
+    "main.ceff0e63.js.map": "/strapi-demo/static/js/main.ceff0e63.js.map",
     "787.7dc3e854.chunk.js.map": "/strapi-demo/static/js/787.7dc3e854.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90267326.css",
-    "static/js/main.fa560cbf.js"
+    "static/js/main.ceff0e63.js"
   ]
 }
