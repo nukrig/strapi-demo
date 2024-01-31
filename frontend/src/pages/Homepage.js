@@ -8,14 +8,20 @@ import MyDatePicker from '../components/calendar/Calendar';
 
 export default function Homepage(language) {
     const [response,setResponse]=useState([])
+    const [isLoading,setIsLoading]=useState(false)
     useEffect(() => {
          axios.get(`https://strapi-demo-app-d3vw.onrender.com/api/reviews?locale=${language.language}`)
         .then(response => {
           setResponse(response.data.data);
+          setIsLoading(true)
         })
     }, [language]);
+    console.log(isLoading);
   return (
-    <div >
+    <>
+    {isLoading ? 
+    
+    (<div >
         <MyDatePicker/>
         {response.map(review => (
             <div key={review.id} className='review-card'>
@@ -30,6 +36,12 @@ export default function Homepage(language) {
                 <Link to={`/details/${review.id}`}> {review.attributes.details}</Link>
             </div>
     ))}
+    </div>) 
+    : 
+    <div style={{display:'flex',justifyContent:'center'}}>
+      <img style={{width:'10%', marginTop:30}} src='https://i.gifer.com/ZKZg.gif' alt='loading'/>
     </div>
+    }
+    </>
   )
 }
