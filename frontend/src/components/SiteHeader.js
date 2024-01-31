@@ -16,8 +16,8 @@ export default function SiteHeader({showLanguages,globeClick,languageClick}) {
           <div style={{display:'flex',alignItems:'center',gap:'10px',position:'relative'}}>
               <ul className='pages'>
                 <Link to={'/strapi-demo'}><li>Home</li></Link>
-                <Link to={'/about'}><li>About</li></Link>
-                <Link to={'/Contact'}><li>Contact</li></Link>
+                <Link to={'/strapi-demo/about'}><li>About</li></Link>
+                <Link to={'/strapi-demo/Contact'}><li>Contact</li></Link>
               </ul>
                 <FontAwesomeIcon className='globe-icon' icon={faGlobe} onClick={globeClick} />
             {showLanguages && 

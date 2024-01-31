@@ -32,7 +32,7 @@ export default function Homepage(language) {
                 <h2><b>{review.attributes.title}</b></h2>
                 <small>{review.attributes.subtext}</small>
                 <p>{review.attributes.paragraph.substring(0,400)}...</p>
-                <Link to={`/details/${review.id}`}> {review.attributes.details}</Link>
+                <Link to={`/strapi-demo/details/${review.id}`}> {review.attributes.details}</Link>
             </div>
     ))}
     </div>) 
