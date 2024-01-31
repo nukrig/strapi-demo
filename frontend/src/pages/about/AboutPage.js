@@ -4,15 +4,20 @@ import axios from 'axios';
 
 export default function AboutPage({language}) {
   const [response,setResponse] = useState([])
+  const [isLoading,setIsLoading]=useState(false)
   useEffect(() => {
     axios.get(`https://strapi-demo-app-d3vw.onrender.com/api/abouts?locale=${language}`)
    .then(response => {
      setResponse(response.data.data[0].attributes);
+     setIsLoading(true)
    })
 }, [language]);
 
   return (
-    <div className='about'>
+    <>
+    {isLoading ? 
+    
+    (<div className='about'>
       <img src='https://socar.ge/wp-content/uploads/thegem-logos/logo_fe25d9e9169b4e10d35e557b02b3236a_1x.png' />
       <h1>{response.heading}</h1>
       <div style={{display:'flex' ,gap:'20px'}}>
@@ -46,6 +51,13 @@ export default function AboutPage({language}) {
             <span>{response.country6}</span>
           </div>
       </div>
+    </div>) 
+    : 
+    <div style={{display:'flex',justifyContent:'center'}}>
+      <img style={{width:'10%', marginTop:30}} src='https://i.gifer.com/ZKZg.gif' alt='loading'/>
     </div>
+    }
+    
+    </>
   )
 }

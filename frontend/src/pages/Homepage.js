@@ -16,13 +16,12 @@ export default function Homepage(language) {
           setIsLoading(true)
         })
     }, [language]);
-    console.log(isLoading);
   return (
     <>
+        <MyDatePicker/>
     {isLoading ? 
     
     (<div >
-        <MyDatePicker/>
         {response.map(review => (
             <div key={review.id} className='review-card'>
                 <img src={review.attributes.link} style={{float:'right',width:'60px',height:'60px',borderRadius:'40px'}}/>
