@@ -1,0 +1,10 @@
+.headerDiv{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1040px) {
+    h1{
+        display: none;
+    }
+  }

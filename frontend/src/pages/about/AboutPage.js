@@ -20,7 +20,7 @@ export default function AboutPage({language}) {
     (<div className='about'>
       <img src='https://socar.ge/wp-content/uploads/thegem-logos/logo_fe25d9e9169b4e10d35e557b02b3236a_1x.png' />
       <h1>{response.heading}</h1>
-      <div style={{display:'flex' ,gap:'20px'}}>
+      <div className='aboutParagraph'>
         <img className='socarBuildingImg' src='https://socar.ge/wp-content/uploads/2021/03/DSC_6323.jpg'/>
         <span>{response.paragraph}</span>
       </div>

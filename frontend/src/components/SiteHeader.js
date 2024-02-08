@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faHouse } from '@fortawesome/free-solid-svg-icons';
+import './SiteHeaderStyles.css'
 
 export default function SiteHeader({showLanguages,globeClick,languageClick}) {
   const handleLanguageSelection = (selectedLanguage) => {
@@ -10,9 +11,10 @@ export default function SiteHeader({showLanguages,globeClick,languageClick}) {
   return (
         
     <div className='site-header'>
-          <Link to='/strapi-demo'><h1><FontAwesomeIcon icon={faHouse} style={{ color: '#8e2ad6', fontSize: '1em',marginRight:'10px'}} 
-          />STRAPI
-          </h1> </Link>
+          <div className='headerDiv'>
+          <FontAwesomeIcon icon={faHouse} style={{ color: '#8e2ad6', fontSize: '1em',marginRight:'10px'}} />
+          <Link to='/strapi-demo'><h1>STRAPI</h1> </Link>
+          </div>
           <div style={{display:'flex',alignItems:'center',gap:'10px',position:'relative'}}>
               <ul className='pages'>
                 <Link to={'/strapi-demo'}><li>Home</li></Link>
