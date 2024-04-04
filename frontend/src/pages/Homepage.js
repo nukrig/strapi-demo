@@ -37,8 +37,11 @@ export default function Homepage(language) {
     ))}
     </div>) 
     : 
-    <div style={{display:'flex',justifyContent:'center'}}>
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <img style={{width:'10%', marginTop:30}} src='https://i.gifer.com/ZKZg.gif' alt='loading'/>
+      <br/>
+      <br/>
+      <p style={{fontWeight:30,fontWeight:'bold',color:'red'}}>გამოყენებულია Strapi-ს სერვერის უფასო ვერსია, შესაბამისად პირველ ჩატვირთვას სჭირდება შედარებით დიდი დრო, მადლობა მოთმინებისთვის...</p>
     </div>
     }
     </>
