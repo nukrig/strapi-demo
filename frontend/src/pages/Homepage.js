@@ -24,7 +24,7 @@ export default function Homepage(language) {
     (<div >
         {response.map(review => (
             <div key={review.id} className='review-card'>
-                <img src={review.attributes.link} style={{float:'right',width:'60px',height:'60px',borderRadius:'40px'}}/>
+                <img src={review.attributes.link} style={{float:'right',width:'60px',height:'60px',borderRadius:'40px'}} alt='img'/>
                 <div className='rating' >
                     {review.attributes.rating}
                     <FontAwesomeIcon icon={faStar} style={{ color: 'rgb(321, 346, 77)', fontSize: '.3em' }} />
@@ -39,7 +39,7 @@ export default function Homepage(language) {
     : 
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <img style={{width:'10%', marginTop:30}} src='https://i.gifer.com/ZKZg.gif' alt='loading'/>
-      <p style={{fontWeight:30,fontWeight:'bold',color:'red'}}>გამოყენებულია Strapi-ს სერვერის უფასო ვერსია, შესაბამისად პირველ ჩატვირთვას სჭირდება შედარებით დიდი დრო, მადლობა მოთმინებისთვის...</p>
+      <p style={{fontSize:22,fontWeight:'bold',color:'red'}}>გამოყენებულია Strapi-ს სერვერის უფასო ვერსია, შესაბამისად პირველ ჩატვირთვას სჭირდება შედარებით დიდი დრო, მადლობა მოთმინებისთვის...</p>
     </div>
     }
     </>
