@@ -55,6 +55,7 @@ export default function AboutPage({language}) {
     : 
     <div style={{display:'flex',justifyContent:'center'}}>
       <img style={{width:'10%', marginTop:30}} src='https://i.gifer.com/ZKZg.gif' alt='loading'/>
+      <p style={{fontWeight:30,fontWeight:'bold',color:'red'}}>გამოყენებულია Strapi-ს სერვერის უფასო ვერსია, შესაბამისად პირველ ჩატვირთვას სჭირდება შედარებით დიდი დრო, მადლობა მოთმინებისთვის...</p>
     </div>
     }
     
